@@ -1,21 +1,36 @@
 {
   "expo": {
-    "name": "calori-app",
-    "slug": "calori-app",
+    "name": "Calories Tracker",
+    "slug": "calories-tracker",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "scheme": "caloriestracker",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to take photos of food for calorie analysis.",
+        "NSPhotoLibraryUsageDescription": "This app accesses your photos to analyze food images for calorie tracking."
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
     },
     "web": {
       "bundler": "metro",
@@ -24,6 +39,7 @@
     },
     "plugins": [
       "expo-router",
+      "expo-image-picker",
       [
         "expo-splash-screen",
         {
@@ -36,6 +52,7 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "description": "A mobile app that analyzes food images to track calories using Google Gemini AI."
   }
 }

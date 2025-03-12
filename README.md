@@ -1,50 +1,77 @@
-# Welcome to your Expo app 👋
+# Calories Tracker App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A mobile application that uses Google Gemini Flash 2.0 AI to analyze food images and track calories.
 
-## Get started
+## Features
 
-1. Install dependencies
+- **Food Image Analysis**: Take photos of your food or select from gallery
+- **AI-Powered Calorie Detection**: Uses Google Gemini Flash 2.0 to analyze food and estimate calories
+- **Detailed Nutritional Information**: View calories, protein, carbs, and fat content
+- **History Tracking**: Save and view your calorie consumption history
+- **Cross-Platform**: Works on iOS, Android, and web
 
-   ```bash
+## Technologies Used
+
+- React Native with Expo
+- TypeScript
+- Google Gemini Flash 2.0 API via OpenRouter
+- Expo Router for navigation
+- AsyncStorage for local data persistence
+- Expo Image Picker for camera and gallery access
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or newer)
+- npm or yarn
+- Expo CLI
+
+### Installation
+
+1. Clone the repository:
+
+   ```
+   git clone <repository-url>
+   cd calories-tracker
+   ```
+
+2. Install dependencies:
+
+   ```
    npm install
    ```
 
-2. Start the app
+3. Start the development server:
 
-   ```bash
-    npx expo start
+   ```
+   npm start
    ```
 
-In the output, you'll find options to open the app in a
+4. Open the app on your device:
+   - Scan the QR code with the Expo Go app on your phone
+   - Press 'a' to open on Android emulator
+   - Press 'i' to open on iOS simulator
+   - Press 'w' to open in web browser
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## API Configuration
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+The app uses Google Gemini Flash 2.0 API through OpenRouter. The API key is already configured in the app, but you can replace it with your own in `services/geminiService.ts`.
 
-## Get a fresh project
+## Usage
 
-When you're ready, run:
+1. Open the app and navigate to the "Analyze" tab
+2. Take a photo of your food or select an image from your gallery
+3. Wait for the AI to analyze the image and provide calorie information
+4. Save the analysis to your history
+5. View your calorie history in the "History" tab
 
-```bash
-npm run reset-project
-```
+## License
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Learn more
+## Acknowledgements
 
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- Google Gemini for providing the AI image analysis capabilities
+- OpenRouter for API access
+- Expo team for the excellent React Native development platform
