@@ -1,6 +1,6 @@
 
 
-![WhatsApp Görsel 2025-03-12 saat 14 29 03_fda60303](https://github.com/user-attachments/assets/f37ce381-cd23-4cef-8569-45c5d817821a)
+<img src="https://github.com/user-attachments/assets/f37ce381-cd23-4cef-8569-45c5d817821a" alt="Görsel 3" width="400">
 
 
 
